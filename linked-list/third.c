@@ -25,3 +25,22 @@ int main(int argc, char *argv[])
 
     return 0;
 }
+
+node *newNode(int data)
+{
+    node *n = malloc(sizeof(node));
+    n->data = data;
+    n->next = NULL;
+    return n;
+}
+
+void printList(node *first)
+{
+    node *ptr = first;
+    while (ptr != NULL)
+    {
+        printf("%i, ", ptr->data);
+        ptr = ptr->next;
+    }
+    printf("\n");
+}
