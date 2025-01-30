@@ -17,6 +17,8 @@ int main(int argc, char *argv[])
     list->next = NULL;
 
     node *n = list;
+    
+    // prints the data while the next pointer is not NULL
     while (n != NULL)
     {
         printf("%i\n", n->data);
